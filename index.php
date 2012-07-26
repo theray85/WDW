@@ -1,9 +1,7 @@
 <html>
 <head>
-<title>designplace.org search script</title>
-<meta name="author" content="Steve R, http://www.designplace.org/">
+<title>index</title>
 </head>
-<!-- © http://www.designplace.org/ -->
 <body>
 
 <form method='post'>
@@ -25,7 +23,7 @@ while ($rowid=mysql_fetch_array($result))
 echo "Meno:".$rowid['name']."</br>";
 echo "ID:".$rowid['entry']."</br>";
 echo "Model ID:".$rowid['modelid1']."</br>";
-echo 'Link: <a href="http://localhost/fuse.sk/database/creature_template/'.$rowid['entry'].'/index.php?id='.$rowid['entry'].'">    http://localhost/fuse.sk/database/creature_template/'.$rowid['entry'].'/index.php?id='.$rowid['entry'].'</a>';
+echo 'Link: <a href="http://localhost/web.sk/database/creature_template/'.$rowid['entry'].'/index.php?id='.$rowid['entry'].'">    http://localhost/web.sk/database/creature_template/'.$rowid['entry'].'/index.php?id='.$rowid['entry'].'</a>';
 }
 echo "</table>";
 }
